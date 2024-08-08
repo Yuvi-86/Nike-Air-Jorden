@@ -1,0 +1,392 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+    overflow-x: hidden;
+}
+
+@keyframes loadingPage {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.loadingPage {
+    animation: loadingPage 6s cubic-bezier(.8, 0, .86, 1.63);
+}
+
+#loading {
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    position: absolute;
+}
+
+.horiscroll {
+    padding-top: 20vh;
+    font-size: 50vh;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.jorden {
+    position: absolute;
+    left: 48vw;
+    top: 99vh;
+}
+
+.home {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.mainani {
+    position: absolute;
+}
+
+.home > img {
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    padding: 0 0 20px 0;
+    background-blend-mode: darken;
+}
+
+.shoeani1 img {
+    position: absolute;
+    background-color: transparent;
+    top: -40vh;
+    left: 0vw;
+}
+
+.shoeani2 img {
+    position: absolute;
+    background-color: transparent;
+    top: -40vh;
+    left: 0vw;
+}
+
+.shoeani3 img {
+    position: absolute;
+    background-color: transparent;
+    top: -40vh;
+    left: 0vw;
+}
+
+.logo {
+    position: relative;
+    top: 0;
+    padding-left: 25px;
+}
+
+nav {
+    display: flex;
+    color: #CCFF00;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+nav ul {
+    padding-left: 28vw;
+    display: flex;
+    align-items: center;
+    gap: 30%;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+.search-container {
+    position: absolute;
+    left: 80%;
+}
+
+.search-container input {
+    padding: 10px 20px;
+    position: absolute;
+    top: 25px;
+    align-items: center;
+    color: white;
+    height: 10px;
+    background-color: rgba(128, 128, 128, 0.133);
+    border-color: rgba(255, 255, 255, 0.233);
+    border-radius: 10px;
+}
+
+.search-container input:focus {
+    border-color: #CCFF00;
+    outline: none;
+}
+
+.search-container svg {
+    position: absolute;
+    left: 15vw;
+    opacity: 20%;
+    top: 30px;
+}
+
+#shopNow {
+    margin-top: 5px;
+    margin-left: 0;
+    padding: 20px 127px;
+    background-color: #BB3C15;
+    font-weight: 800;
+    color: black;
+    
+}
+
+.cards ul {
+    padding-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+}
+
+.cards img {
+    height: 80vh;
+    width: auto;
+}
+
+.info {
+    color: #BB3C15;
+    font-family: "Roboto Condensed", sans-serif;
+    height: 80lvh;
+    width: 26lvw;
+    padding: 0px 50px 50px 70px;
+}
+
+
+
+.info button {
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
+    border: rgba(128, 128, 128, 0.187);
+    color: white;
+    background-color: rgba(66, 66, 66, 0.554);
+    font-size: 15px;
+    margin: 12px;
+}
+
+.info button:hover {
+    border: 2px solid #BB3C15;
+}
+
+#favourite {
+    margin-top: 5px;
+    margin-left: 0;
+    padding: 22px 127px;
+}
+
+#favourite svg {
+    height: 15px;
+    width: 15px;
+}
+
+.options img {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navhover {
+    font-size: 1.1rem;
+}
+
+.newprod {
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 10vh 5vw;
+    color: #CCFF00;
+}
+
+.newprod img {
+    height: 60vh;
+    width: auto;
+    padding: 5vh 5vh 10vh 1vh;
+}
+
+#footer {
+    height: 15vh;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#footer a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #CCFF00;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.endvideo video {
+    height: 95vh;
+    width: auto;
+    border-radius: 10%;
+}
+
+.endvideo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20vh 0;
+}
+
+.endtext {
+    font-family: "Dancing Script";
+    font-weight: 1200;
+    font-size: 2.5rem;
+    color: #BB3C15;
+}
+
+/* Responsive Design using Media Queries */
+
+/* Mobile Devices */
+@media screen and (max-width: 767px) {
+    nav ul {
+        padding-left: 10vw;
+        gap: 15%;
+    }
+
+    .search-container {
+        left: 70%;
+    }
+
+    .cards img {
+        height: 60vh;
+        width: 90vw;
+    }
+
+    .info {
+        height: auto;
+        width: 90vw;
+        padding: 20px;
+    }
+
+    .options img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .newprod img {
+        height: 40vh;
+        padding: 2vh 1vh;
+    }
+
+    .endvideo video {
+        height: 60vh;
+    }
+
+    .endtext {
+        font-size: 1.8rem;
+    }
+
+    #shopNow {
+        padding: 15px 70px;
+        font-size: 1rem;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    nav ul {
+        padding-left: 20vw;
+        gap: 20%;
+    }
+
+    .search-container {
+        left: 75%;
+    }
+
+    .cards img {
+        height: 70vh;
+        width: 40vw;
+    }
+
+    .info {
+        height: auto;
+        width: 80vw;
+        padding: 30px;
+    }
+
+    .options img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .newprod img {
+        height: 50vh;
+        padding: 3vh 2vh;
+    }
+
+    .endvideo video {
+        height: 80vh;
+    }
+
+    .endtext {
+        font-size: 2.2rem;
+    }
+
+    #shopNow {
+        padding: 18px 90px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Large Screens */
+@media screen and (min-width: 1025px) {
+    .cards img {
+        height: 80vh;
+        width: 28vw;
+    }
+
+    .info {
+        height: 80vh;
+        width: 26vw;
+        padding: 0px 50px 50px 70px;
+    }
+
+    .options img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .newprod img {
+        height: 60vh;
+        padding: 5vh 5vh 10vh 1vh;
+    }
+
+    .endvideo video {
+        height: 95vh;
+    }
+
+    .endtext {
+        font-size: 2.5rem;
+    }
+
+    #shopNow {
+        padding: 20px 110px;
+        font-size: 1.2rem;
+    }
+}
